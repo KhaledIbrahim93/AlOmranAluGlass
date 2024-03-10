@@ -198,10 +198,13 @@ section {
 }
 
 .section-heading h6 {
-  font-size: 15px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #00bdfe;
   font-weight: 400;
+  font-family: 'Cairo', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .section-heading h4 {
@@ -281,7 +284,7 @@ Header Style
 }
 
 .header-area .main-nav .nav {
-  flex-basis: 60%;
+  flex-basis: 70%;
   height: 70px;
   margin-top: 0px;
   margin-right: 0px;
@@ -929,9 +932,10 @@ a.btn_red {
 Banner Style
 --------------------------------------------- 
 */
+/* background-image: url(../images/banner-bg.jpg); */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../images/7.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1410,8 +1414,12 @@ pricing-plans
 
 .pricing-item ul li {
   font-size: 15px;
-  color: #00bdfe;
-  margin-bottom: 10px;
+    color: #00bdfe;
+    margin-bottom: 10px;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .pricing-item ul.first-plan li:nth-child(5),
@@ -2206,7 +2214,7 @@ Categories Page
 
 .testimonials {
   background-color: #f1fbff;
-  padding: 120px 0px;
+  /* padding: 120px 0px; */
 }
 
 .testimonials .item {
