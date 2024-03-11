@@ -128,10 +128,10 @@
 		function initializeClock(endtime){
 		var timeinterval = setInterval(function(){
 		  var t = getTimeRemaining(endtime);
-		  document.querySelector(".days > .value").innerText=t.days;
-		  document.querySelector(".hours > .value").innerText=t.hours;
-		  document.querySelector(".minutes > .value").innerText=t.minutes;
-		  document.querySelector(".seconds > .value").innerText=t.seconds;
+		//   document.querySelector(".days > .value").innerText=t.days;
+		//   document.querySelector(".hours > .value").innerText=t.hours;
+		//   document.querySelector(".minutes > .value").innerText=t.minutes;
+		//   document.querySelector(".seconds > .value").innerText=t.seconds;
 		  if(t.total<=0){
 			clearInterval(timeinterval);
 		  }
@@ -314,13 +314,13 @@
 	    $('.nav a').each(function () {
 	        var currLink = $(this);
 	        var refElement = $(currLink.attr("href"));
-	        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-	            $('.nav ul li a').removeClass("active");
-	            currLink.addClass("active");
-	        }
-	        else{
-	            currLink.removeClass("active");
-	        }
+	        // if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+	        //     $('.nav ul li a').removeClass("active");
+	        //     currLink.addClass("active");
+	        // }
+	        // else{
+	        //     currLink.removeClass("active");
+	        // }
 	    });
 	}
 
@@ -388,7 +388,7 @@
             $w = jQuery(window),
             viewTop = $w.scrollTop(),
             viewBottom = viewTop + $w.height(),
-            _top = $t.offset().top,
+            _top = $t.offset()?.top,
             _bottom = _top + $t.height(),
             compareTop = partial === true ? _bottom : _top,
             compareBottom = partial === true ? _top : _bottom;
