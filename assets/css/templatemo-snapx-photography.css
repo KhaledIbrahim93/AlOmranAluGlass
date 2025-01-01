@@ -1497,13 +1497,29 @@ footer p a {
   font-weight: 500;
 }
 
-.whatsapp-icon {
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 2000px; /* Just for demonstration to enable scrolling */
 }
-.phone-number {
-  margin: 10px 0;
+.floating-container {
+  position: fixed;
+  bottom: 20px;    /* Distance from the bottom of the viewport */
+  right: 20px;     /* Distance from the right of the viewport */
+  z-index: 1000;   /* Ensures it stays on top of other elements */
+  text-align: center; /* Center-aligns the contents */
+}
+.icon-container {
+  margin-bottom: 10px; /* Space between the icons */
+}
+.icon {
+  display: inline-block;
+  margin: 0 10px; /* Space between icons */
+}
+.call-icon, .whatsapp-icon {
+  width: 40px; /* Size of the icons */
+  height: 60px;
+  cursor: pointer;
 }
 
 /* 
